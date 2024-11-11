@@ -1,0 +1,4 @@
+usr/include/KF6/KItemViews/
+usr/lib/*/cmake/KF6ItemViews/
+usr/lib/*/libKF6ItemViews.so
+usr/lib/*/qt6/plugins/designer/kitemviews6widgets.so
