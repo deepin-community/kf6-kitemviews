@@ -83,7 +83,6 @@ KWidgetItemDelegatePool::findWidgets(const QPersistentModelIndex &idx, const QSt
         result = d->usedWidgets[index];
     } else {
         result = d->delegate->createItemWidgets(index);
-        d->allocatedWidgets << result;
         d->usedWidgets[index] = result;
         for (QWidget *widget : std::as_const(result)) {
             d->widgetInIndex[widget] = index;
@@ -133,7 +132,6 @@ void KWidgetItemDelegatePool::fullClear()
     d->clearing = true;
     qDeleteAll(d->widgetInIndex.keys());
     d->clearing = false;
-    d->allocatedWidgets.clear();
     d->usedWidgets.clear();
     d->widgetInIndex.clear();
 }
@@ -147,8 +145,6 @@ bool KWidgetItemDelegateEventListener::eventFilter(QObject *watched, QEvent *eve
         // assume the application has kept a list of widgets and tries to delete them manually
         // they have been reparented to the view in any case, so no leaking occurs
         poolPrivate->widgetInIndex.remove(widget);
-        QWidget *viewport = poolPrivate->delegate->d->itemView->viewport();
-        QApplication::sendEvent(viewport, event);
     }
     if (dynamic_cast<QInputEvent *>(event) && !poolPrivate->delegate->blockedEventTypes(widget).contains(event->type())) {
         QWidget *viewport = poolPrivate->delegate->d->itemView->viewport();

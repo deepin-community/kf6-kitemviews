@@ -4,7 +4,7 @@
     SPDX-FileCopyrightText: 2005 Rafal Rzepecki <divide@users.sourceforge.net>
     SPDX-FileCopyrightText: 2006 Hamish Rodda <rodda@kde.org>
 
-    SPDX-License-Identifier: LGPL-2.0-only
+    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
 #include "ktreewidgetsearchline.h"
@@ -209,7 +209,7 @@ KTreeWidgetSearchLine::KTreeWidgetSearchLine(QWidget *q, QTreeWidget *treeWidget
     connect(this, SIGNAL(textChanged(QString)), this, SLOT(_k_queueSearch(QString)));
 
     setClearButtonEnabled(true);
-    setPlaceholderText(tr("Search...", "@info:placeholder"));
+    setPlaceholderText(tr("Search…", "@info:placeholder"));
     setTreeWidget(treeWidget);
 
     if (!treeWidget) {
