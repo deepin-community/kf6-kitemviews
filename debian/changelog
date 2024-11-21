@@ -1,3 +1,56 @@
+kf6-kitemviews (6.6.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (6.6.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 06 Sep 2024 22:59:55 +0200
+
+kf6-kitemviews (6.5.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * 'acc' autopkgtest: set -std=c++17, needed when using Qt 6.
+  * CI: update/simplify configuration.
+  * Drop the 'testsuite' autopkgtest, as it does not test the installed
+    packages.
+  * Drop the unused ${shlibs:Depends} substvar from libkf6itemviews-data.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 18 Aug 2024 11:22:38 +0200
+
+kf6-kitemviews (6.5.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (6.5.0).
+  * Update build-deps and deps with the info from cmake.
+  * Release to unstable.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Aug 2024 23:21:59 +0200
+
+kf6-kitemviews (6.4.0-1) experimental; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (6.4.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 19 Jul 2024 09:24:08 +0200
+
+kf6-kitemviews (6.3.0-1) experimental; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Add declarative dh-sequence-kf6 and dh-sequence-pkgkde-symbolshelper build
+    dependencies to use the kf6 and pkgkde-symbolshelper dh addons
+    automatically.
+
+  [ Patrick Franz ]
+  * New upstream release (6.3.0).
+  * Bump Standards-Version to 4.7.0 (No changes needed).
+  * Update build-deps and deps with the info from cmake.
+  * Modernize building by using dh-sequence build-dependencies and
+    dropping manually specified addons and buildsystems for dh.
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Sun, 09 Jun 2024 14:54:01 +0200
+
 kf6-kitemviews (6.0.0-1) experimental; urgency=medium
 
   [ Patrick Franz ]

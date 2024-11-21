@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 6.0.0 amd64
+# SymbolsHelper-Confirmed: 6.3.0 amd64
 libKF6ItemViews.so.6 libkf6itemviews6 #MINVER#
 * Build-Depends-Package: libkf6itemviews-dev
  _ZGVZN9QMetaType21registerConverterImplI5QListIN6QEvent4TypeEE9QIterableI13QMetaSequenceEEEbSt8functionIFbPKvPvEES_S_E10unregister@Base 6.0.0
@@ -141,6 +141,9 @@ libKF6ItemViews.so.6 libkf6itemviews6 #MINVER#
  _ZN27KTreeWidgetSearchLineWidgetD0Ev@Base 6.0.0
  _ZN27KTreeWidgetSearchLineWidgetD1Ev@Base 6.0.0
  _ZN27KTreeWidgetSearchLineWidgetD2Ev@Base 6.0.0
+ _ZN32KCategorizedSortFilterProxyModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 6.3.0
+ _ZN32KCategorizedSortFilterProxyModel11qt_metacastEPKc@Base 6.3.0
+ _ZN32KCategorizedSortFilterProxyModel16staticMetaObjectE@Base 6.3.0
  _ZN32KCategorizedSortFilterProxyModel19setCategorizedModelEb@Base 6.0.0
  _ZN32KCategorizedSortFilterProxyModel36setSortCategoriesByNaturalComparisonEb@Base 6.0.0
  _ZN32KCategorizedSortFilterProxyModel4sortEiN2Qt9SortOrderE@Base 6.0.0
@@ -187,6 +190,7 @@ libKF6ItemViews.so.6 libkf6itemviews6 #MINVER#
  _ZNK27KTreeWidgetSearchLineWidget10metaObjectEv@Base 6.0.0
  _ZNK27KTreeWidgetSearchLineWidget10searchLineEv@Base 6.0.0
  _ZNK27KTreeWidgetSearchLineWidget16createSearchLineEP11QTreeWidget@Base 6.0.0
+ _ZNK32KCategorizedSortFilterProxyModel10metaObjectEv@Base 6.3.0
  _ZNK32KCategorizedSortFilterProxyModel10sortColumnEv@Base 6.0.0
  _ZNK32KCategorizedSortFilterProxyModel15subSortLessThanERK11QModelIndexS2_@Base 6.0.0
  _ZNK32KCategorizedSortFilterProxyModel17compareCategoriesERK11QModelIndexS2_@Base 6.0.0
